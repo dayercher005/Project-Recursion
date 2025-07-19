@@ -4,6 +4,7 @@
 function fibs(number){
     const FibArray = [0, 1];
 
+    // Base Case: If number is 1, return 0
     if(number == 1) {
         return [0]
     }
@@ -19,11 +20,15 @@ function fibs(number){
 
 function fibsRec(number){
 
+    // Base Cases: If number is either 0 or 1, return [0] or [0, 1] respectively.
+
     if (number == 1) {
         return [0]
     }else if (number == 2){
         return [0, 1]
     }
+
+    // Sets the subsequent recursive functions to a variable while appending the array in each recursive function.
 
     const FibArray = fibsRec(number - 1);
     FibArray.push(FibArray[FibArray.length - 1] + FibArray[FibArray.length - 2]);
