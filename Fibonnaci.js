@@ -30,5 +30,5 @@ function fibsRec(number){
     return FibArray
 }
 
-console.log(fibs(10));
-console.log(fibsRec(10));
+console.log(fibs(7));
+console.log(fibsRec(7));
