@@ -2,6 +2,9 @@
 // Iterative Solution
 
 function fibs(number){
+
+    console.log("This was printed iteratively");
+
     const FibArray = [0, 1];
 
     // Base Case: If number is 1, return 0
@@ -20,6 +23,7 @@ function fibs(number){
 
 function fibsRec(number){
 
+    console.log("This was printed recursively");
     // Base Cases: If number is either 0 or 1, return [0] or [0, 1] respectively.
 
     if (number == 1) {

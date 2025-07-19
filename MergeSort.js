@@ -1,5 +1,7 @@
 function mergeSort(Array){
 
+    console.log("This was printed recursively");
+
     if (Array.length === 1){
         return Array;
     }
